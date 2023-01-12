@@ -1,0 +1,41 @@
+body{
+    margin:0px;
+    padding:0px;
+    font-family: sans-sarif;
+}
+header{
+    background-color: aliceblue;
+}
+
+.logo{
+    width:120px;
+    cursor:pointer;
+}
+.navbar ul li{
+
+    list-style:none;
+    display:inline-block;
+    margin:0 40px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration:none;
+}   
+.navbar ul li::after{
+    content:'';
+    height: 4px;
+    width:0px;
+    background:rgb(26, 164, 123);
+    position:absolute;
+    left:0;
+    bottom:-10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width:100%;
+}
+#box1{
+    background-color: rgb(60, 195, 128);
+    height:500px;
+}
+
